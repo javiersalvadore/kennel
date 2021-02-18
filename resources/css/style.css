@@ -81,33 +81,42 @@ img {
 #landing {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 100px);
+    grid-template-rows: repeat(10, 100px);
     box-sizing: border-box;
     width: 100%;
     height: 500px;
     grid-auto-rows: 1fr;
     grid-auto-columns: 1fr;
     grid-gap: 15px;
-    background-image: url("file:///home/salvadore/Downloads/codecademy/portfolio/resources/media/background.jpg");
+    background-image: url("file:D:/Downloads/projects/portfolio/resources/media/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-self: center;
+}
+#text {
+    grid-area: 2 / 2 / span 2 / span 6;
+    background-color: rgba(0, 19, 77, 0.8);
+    height: fit-content;
+    padding: 0 10px 20px 10px;
 }
 
 #landing .header, p {
     justify-content: center;
     align-self: center;
     color: #f2f2f2;
-    background-color: rgba(0, 19, 77, 0.8);
     grid-area: 1 / 2 / span 2 / span 6;
+    text-align: center;
 }
 h1 {
     grid-area: 1 / 2 / span 1 / span 6 !important;
-    font-size: 40px;
-    text-align: center;
+    font-size: 50px;
+    padding-bottom: 5px;
 }
 #landing p {
-    grid-area: 1 / 2 / span 2 / span 6;
+    
+    grid-area: 2 / 2 / span 1 / span 6 !important;
     align-self: flex-end; 
     text-justify: auto;
+    
+    font-size: 30px;
 }
