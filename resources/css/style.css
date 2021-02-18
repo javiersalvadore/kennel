@@ -76,3 +76,28 @@ img {
 #body {
     margin-top: 100px;
 }
+
+#landing {
+    background-image: url("file:///home/salvadore/Downloads/codecademy/portfolio/resources/media/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    display: flex;
+    height: 500px;
+    justify-self: center;
+}
+
+#landing .header, p {
+    justify-content: center;
+    align-self: center;
+    color: #f2f2f2;
+    background-color: rgba(0, 19, 77, 0.8);
+}
+h1 {
+    display: flex;
+    font-size: 40px;
+    position: relative;
+    top: auto;
+    text-align: center;
+    left: 45%;
+}
