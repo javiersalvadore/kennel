@@ -91,10 +91,11 @@ img {
     grid-auto-rows: 1fr;
     grid-auto-columns: 1fr;
     grid-gap: 15px;
-    background-image: url("file:D:/Downloads/projects/portfolio/resources/media/background.jpg");
+    background-image: url("file:///home/salvadore/Downloads/codecademy/portfolio/resources/media/background.jpg");
     /* Linux file:///home/salvadore/Downloads/codecademy/portfolio/resources/media/background.jpg */
     /* Win file:D:/Downloads/projects/portfolio/resources/media/background.jpg */
     background-repeat: no-repeat;
+    overflow: auto;
     background-size: cover;
     justify-self: center;
     filter: drop-shadow(0 0 30px rgba(0, 19, 77));
@@ -128,7 +129,6 @@ h1 {
     padding: 20px;
     background-color:rgba(0, 19, 77);
     width: 100%;
-    height: fit-content;
 }
 #disponibles .header {
     text-align: center;
@@ -143,8 +143,10 @@ h1 {
 }
 #pictures {
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     box-sizing: border-box;
-    width: 100%;
+    max-width: 100%;
     height: 525px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -152,8 +154,6 @@ h1 {
     background-color:rgba(0, 19, 77);
 }
 #pictures figure {
-    flex-grow: 1;
-    flex-shrink: 1;
     align-self: flex-end;
     justify-content: center;
 }
@@ -169,4 +169,15 @@ figcaption {
     color: #f2f2f2;
     text-decoration: none;
     text-align: center;
+}
+#plantel .header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 40px;
 }
