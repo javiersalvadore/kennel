@@ -197,8 +197,11 @@ figcaption {
 footer {
     height: 100px;
     background-color:rgba(0, 19, 77);
+    display: flex;
+    justify-content: center;
 }
 footer img {
     max-width: 80px;
     max-height: 80px;
+    padding: 0 20px;
 }
