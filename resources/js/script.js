@@ -1,4 +1,4 @@
-let images = document.getElementsByClassName('img');
+let images = document.getElementsByTagName('img');
 const overlay = (element) => {
     let paragraph = document.createElement('p');
     paragraph.innerHTML = `Nombre: ${element.h5.innerHTML}<br> Fecha de nacimiento: 17/12/2020 <br> Padres: Amazonas y Leopoldo`;
