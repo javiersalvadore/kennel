@@ -8,5 +8,5 @@ const overlay = (element) => {
     element.appendChild(paragraph);
 };
 for (let i = 0; i < image.length; i++) {
-    images[i].addEventListener('hover', overlay(images[i]));
+    images[i].addEventListener('mouseover', overlay(images[i]));
 };
