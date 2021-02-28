@@ -101,7 +101,7 @@ img {
     filter: drop-shadow(0 0 30px rgba(0, 19, 77));
 }
 #text {
-    
+
     grid-area: 2 / 2 / span 2 / span 6;
     background-color: rgba(0, 19, 77, 0.8);
     height: fit-content;
@@ -166,6 +166,9 @@ h1 {
     left: 50%;
     transform: translate(-50%, 0);
 }
+#pictures img:hover, #plantel img:hover {
+    filter: blur(8px);
+}
 figcaption {
     color: #f2f2f2;
     text-decoration: none;
@@ -205,4 +208,8 @@ footer img {
     max-width: 80px;
     max-height: 80px;
     padding: 0 20px;
+}
+
+@media (orientation: portrait) and (max-width: 1440px) {
+    
 }
