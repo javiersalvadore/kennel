@@ -9,5 +9,7 @@ const overlay = (element) => {
     element.style.blur = '8px';
 };
 for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener('mouseover',overlay(images[i]));
+    images[i].onmouseover = overlay(images[i]);
+    console.log(i);
 };
+console.log(images)
