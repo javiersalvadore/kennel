@@ -211,5 +211,7 @@ footer img {
 }
 
 @media (orientation: portrait) and (max-width: 1440px) {
-    
+    #landing {
+        height: 600px;
+    }
 }
