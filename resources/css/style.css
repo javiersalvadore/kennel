@@ -42,6 +42,15 @@ table {
     border-spacing: 0;
 }
 
+@keyframes blurIn {
+    from {filter: blur(0);}
+    to {filter:blur(8px)}
+}
+@keyframes blurOut {
+    from {filter: blur(8px);}
+    to {filter: blur();}
+}
+
 nav {
     padding: 1vh 20px;
     position: fixed;
