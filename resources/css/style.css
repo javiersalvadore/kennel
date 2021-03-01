@@ -42,6 +42,15 @@ table {
     border-spacing: 0;
 }
 
+@keyframes blurIn {
+    from {filter: blur(0);}
+    to {filter:blur(8px)}
+}
+@keyframes blurOut {
+    from {filter: blur(8px);}
+    to {filter: blur();}
+}
+
 nav {
     padding: 1vh 20px;
     position: fixed;
@@ -166,9 +175,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, 0);
 }
-#pictures img:hover, #plantel img:hover {
-    filter: blur(8px);
-}
+
 figcaption {
     color: #f2f2f2;
     text-decoration: none;
