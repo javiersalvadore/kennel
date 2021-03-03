@@ -44,7 +44,7 @@ table {
 
 @keyframes blurIn {
     from {filter: blur(0);}
-    to {filter:blur(8px)}
+    to {filter:blur(8px);}
 }
 @keyframes blurOut {
     from {filter: blur(8px);}
